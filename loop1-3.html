@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>반복문 예제 1번 : 사용자가 입력한 수들의 갯수와 합을 구하는 프로그램 0을 입력하면 종료</h2>
+    <script>
+        var sum = 0;
+        var count = 0;
+        while(true){
+            var su2 = prompt("수를 입력하세요 : (0을 입력하면 종료)" );
+            var su = Number(su2);
+            sum += su;
+            count++;
+            if(su ===0) {
+                break;
+            }
+        }
+        document.write("입력하신 수의 합은 : " + sum + " 이고 개수는 " + (count-1) + " 입니다.");
+    </script>
+</body>
+</html>
