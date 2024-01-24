@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>소수 판별 프로그램</h2>
+    <script>
+        var sosu = prompt("2이상의 수를 입력해 주세요");
+        var sosu2 = Number(sosu);
+        var str = "소수임";
+        for( i = 2; i<sosu2; i++){
+            if(sosu2 % i === 0 ) {
+                str = "소수 아님";
+                break;   
+            }
+        }
+        document.write(str);
+    </script>
+</body>
+</html>
